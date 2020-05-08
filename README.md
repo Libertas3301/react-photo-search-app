@@ -37,7 +37,7 @@ npm run dev
 
 ## Built With
 
-- [Next js](https://github.com/zeit/next.js/) - The web framework used
+- [React js](https://github.com/reactjs) - The web framework used
 
 ## Versioning
 
