@@ -1,0 +1,262 @@
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.message__notFound {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.galery__block {
+  width: 1480px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 60px;
+}
+
+.galery__grid {
+  width: 97%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+}
+
+.likes__counter {
+  margin-top: 10px;
+}
+
+.galery__grid > div {
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.galery__grid > div > img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  height: 300px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.query__data {
+  margin-left: 30px;
+}
+
+.query__data_title {
+  font-size: 30px;
+  margin-top: -5px;
+  font-weight: 900;
+}
+
+.galery__grid > div::before {
+  content: "view photo";
+  display: flex;
+  justify-content: center;
+  top: 40%;
+  position: relative;
+  color: white;
+  font-size: 25px;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.galery__grid > div::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(128, 128, 128, 0.7);
+  filter: blur(10%);
+  position: relative;
+  margin-top: -270px;
+  top: -79px;
+  visibility: hidden;
+}
+
+.galery__grid > div:hover::after {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.galery__grid > div:hover::before {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.loading {
+  display: inherit;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.query__entity {
+  background-color: rgb(233, 134, 5);
+  width: auto;
+  padding: 0 7px;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 14px;
+}
+
+.query__element {
+  font-size: 25px;
+  word-wrap: break-word;
+  width: 340px;
+  line-height: 50px;
+  margin-left: -52px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 300px) {
+  .galery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 99%;
+  }
+
+  .galery__block {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 60px;
+  }
+
+  .query__data_title {
+    margin-top: 16px;
+  }
+
+  .query__element {
+    margin-top: -10px;
+    word-wrap: break-word;
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+  .galery__block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+  }
+
+  .query__data {
+    margin-top: -2174px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .galery__block > div:nth-child(1) {
+    margin-top: 100px;
+  }
+
+  .query__element {
+    width: 585px;
+    text-align: left;
+    display: inherit;
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
+
+  .galery__grid > div {
+    width: 250px;
+  }
+
+  .galery__grid > div > img {
+    width: 250px;
+    object-position: center;
+  }
+
+  .galery__block {
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .query__data {
+    /* margin-top: -2079px; */
+  }
+
+  .galery__block {
+    margin-top: 70px;
+  }
+
+  .query__data_title {
+    margin-top: 33px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .galery__grid {
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
+
+  .galery__grid > div {
+    grid-template-columns: 1fr;
+    width: 200px;
+    height: 200px;
+  }
+
+  .galery__grid > div > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .galery__grid > div::after {
+    width: 400px;
+  }
+
+  .query__data_title {
+    text-align: left;
+  }
+
+  .query__data {
+    margin-top: -4215px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .query__element {
+    margin-top: -41px;
+    margin-left: -53px;
+    width: 340px;
+  }
+
+  .galery__block {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .galery__grid > div::after {
+    width: 200px;
+    height: 200px;
+    top: 20px;
+  }
+
+  .query__data {
+    margin-top: 0;
+    position: relative;
+    top: -2166px;
+  }
+
+  .message__notFound {
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  .galery__block > div:nth-child(1) {
+    margin-top: 150px;
+  }
+}

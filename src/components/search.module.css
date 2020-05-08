@@ -1,0 +1,95 @@
+.input__value {
+  padding-left: 35px;
+  width: 70%;
+  height: 30px;
+  font-size: 20px;
+}
+
+.form__submit_button {
+  background: rgb(233, 134, 5);
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  position: relative;
+  top: -3px;
+  padding: 10.5px 30px;
+  margin-left: 65px;
+  color: white;
+  text-transform: uppercase;
+  width: 110px;
+}
+
+.form__submit_button:hover {
+  background: rgb(233, 134, 5);
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 300px) {
+  .input__value {
+    padding-left: 35px;
+    width: 67%;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .form__submit_button {
+    margin-left: 31px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+  .form {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .form__submit_button {
+    margin-left: -31px;
+  }
+
+  .form > .form__submit_button:nth-child(1) {
+    position: relative;
+    left: 54px;
+    top: -2px;
+    width: 110px;
+  }
+
+  .form > .form__submit_button:nth-child(2) {
+    position: relative;
+    top: 44px;
+    left: 79px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .input__value {
+    padding-left: 35px;
+    width: 92%;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .form > .form__submit_button:nth-child(2) {
+    margin-left: -78px;
+    top: -2px;
+  }
+
+  .form > .form__submit_button:nth-child(3) {
+    position: relative;
+    left: 152px;
+    top: -2px;
+    width: 110px;
+    margin-left: -55px;
+    margin-top: 21px;
+  }
+
+  .input__value {
+    padding-left: 12px;
+    width: 47.4%;
+    height: 30px;
+    font-size: 20px;
+    display: block;
+  }
+}
